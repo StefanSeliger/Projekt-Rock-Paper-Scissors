@@ -15,7 +15,7 @@ main {
   width: 414px;
   border: 10px solid #2b0f0c;
   border-radius: 3px;
-  margin: 20vh auto;
+  margin: 5vh auto;
 }
 main h1 {
   background: white;
@@ -23,26 +23,31 @@ main h1 {
 }
 main form {
   background: #f2dab6;
-  padding: 3vh 5vw;
+  padding: 10px;
 }
 main form section {
   border: 2px solid #2b0f0c;
   border-radius: 3px;
   margin: 20px 0;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 main form section:nth-of-type(1) {
   background: rgba(187, 197, 146, 0.5);
 }
 main form section:nth-of-type(1) h2 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 main form section:nth-of-type(1) article {
   padding: 10px;
 }
 main form section:nth-of-type(1) article label {
   margin-right: 10px;
+}
+main form p {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 2vh;
 }
 
 main form section:nth-of-type(2) {
@@ -53,6 +58,9 @@ main form section:nth-of-type(2) {
   font-weight: bold;
   font-size: 1.3rem;
 }
+main form section:nth-of-type(2) #result {
+  padding: 0 4px;
+}
 main form section:nth-of-type(2) .circleResults {
   padding: 15px 25px;
   background: #ce7939;
@@ -60,10 +68,44 @@ main form section:nth-of-type(2) .circleResults {
   border-radius: 5px;
 }
 main form section:nth-of-type(2) .user {
-  margin-left: 5vw;
+  margin-left: 5px;
 }
 main form section:nth-of-type(2) .comp {
-  margin-right: 5vw;
+  margin-right: 5px;
+}
+
+main form section:nth-of-type(3) {
+  background: rgba(187, 197, 146, 0.5);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+main form > p {
+  height: 53px;
+}
+main form div {
+  margin: 20px 0;
+}
+main form div button {
+  margin: 0 15px;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background: rgba(43, 15, 12, 0.8);
+  border: none;
+  transition: 0.2s linear;
+}
+main form div button:hover {
+  background: #df9084;
+}
+main form div button:active {
+  transform: scale(0.85);
+}
+main a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+main a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

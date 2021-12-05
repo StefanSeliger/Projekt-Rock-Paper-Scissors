@@ -18,19 +18,19 @@ main {
     width: 414px; 
     border: 10px solid rgb(43,15,12); 
     border-radius: 3px; 
-    margin: 20vh auto; 
+    margin: 5vh auto; 
     h1 {
         background: white; 
         padding: 20px; 
     }
     form {
         background: rgb(242,218,182);
-        padding: 3vh 5vw;  
+        padding: 10px;  
         section {
             border: 2px solid rgb(43,15,12); 
             border-radius: 3px;
             margin: 20px 0; 
-            padding: 10px 0; 
+            padding: 10px; 
         }
     }
     
@@ -42,7 +42,7 @@ main {
         section:nth-of-type(1) {
             background: rgba(187,197,146,0.5); 
             h2 {
-                font-size: 1.3rem;
+                font-size: 1.6rem;
             }
             article {
                 padding: 10px;
@@ -50,6 +50,11 @@ main {
                     margin-right: 10px;
                 } 
             }
+        }
+        p {
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-top: 2vh; 
         }
     }  
 }
@@ -64,6 +69,9 @@ main {
             background: rgba(223,144,132,0.5); 
             font-weight: bold;
             font-size: 1.3rem;
+            #result {
+                padding: 0 4px; 
+            }
             .circleResults {
                 padding: 15px 25px; 
                 background: rgb(206,121,57);
@@ -71,12 +79,52 @@ main {
                 border-radius: 5px; 
             }
             .user {
-                margin-left: 5vw; 
+                margin-left: 5px; 
             }
             .comp {
-                margin-right: 5vw; 
+                margin-right: 5px; 
             }
         }
     }
 }
+
+main {
+    form {
+        section:nth-of-type(3) {
+            background: rgba(187,197,146,0.5); 
+            font-weight: bold;
+            font-size: 1.3rem;
+            }
+            > p {
+                height: 53px; 
+            }
+            div {
+                margin: 20px 0; 
+                button {
+                    margin: 0 15px; 
+                    padding: 10px 12px; 
+                    border-radius: 50%; 
+                    font-size: 2rem;
+                    background: rgba(43,15,12,0.8);
+                    border: none;  
+                    transition: 0.2s linear; 
+                    &:hover {
+                        background: rgb(223,144,132); 
+                    } 
+                    &:active {
+                        transform: scale(0.85);
+                    }
+                }
+            } 
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+}  
+
+
 

@@ -35,16 +35,17 @@ let userChoice = (x) => {
     roundSelection.style.display = "none"
     countRound += 1
     roundsPlayed.innerHTML = `${countRound} / ${formRounds}` 
+    
 
     if (compArrayRandom == x) { // tie
         gameOutput.innerHTML = "It's a tie!"
     } else if (compArrayRandom != x) { // computer wins
         if (compArrayRandom == rock && x == scissors || compArrayRandom == paper && x == rock || compArrayRandom == scissors && x == paper) {
-            gameOutput.innerHTML = "The computer wins, user looses."
+            gameOutput.innerHTML = `You chose ${x}, Computer chose ${compArrayRandom}.`
             compPoints +=1
             compWins.innerHTML = compPoints
         } else { // user wins
-            gameOutput.innerHTML = "The user wins, computer looses."
+            gameOutput.innerHTML = `You chose ${x}, Computer chose ${compArrayRandom}.`
             userPoints +=1
             userWins.innerHTML = userPoints
         }
