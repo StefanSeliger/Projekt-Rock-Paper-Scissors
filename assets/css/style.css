@@ -1,3 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #2b0f0c;
+}
 
+body {
+  background: #643236;
+}
+
+main {
+  text-align: center;
+  width: 414px;
+  border: 10px solid #2b0f0c;
+  border-radius: 3px;
+  margin: 20vh auto;
+}
+main h1 {
+  background: white;
+  padding: 20px;
+}
+main form {
+  background: #f2dab6;
+  padding: 3vh 5vw;
+}
+main form section {
+  border: 2px solid #2b0f0c;
+  border-radius: 3px;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+main form section:nth-of-type(1) {
+  background: rgba(187, 197, 146, 0.5);
+}
+main form section:nth-of-type(1) h2 {
+  font-size: 1.3rem;
+}
+main form section:nth-of-type(1) article {
+  padding: 10px;
+}
+main form section:nth-of-type(1) article label {
+  margin-right: 10px;
+}
+
+main form section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(223, 144, 132, 0.5);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+main form section:nth-of-type(2) .circleResults {
+  padding: 15px 25px;
+  background: #ce7939;
+  border: 1px solid #ce7939;
+  border-radius: 5px;
+}
+main form section:nth-of-type(2) .user {
+  margin-left: 5vw;
+}
+main form section:nth-of-type(2) .comp {
+  margin-right: 5vw;
+}
 
 /*# sourceMappingURL=style.css.map */

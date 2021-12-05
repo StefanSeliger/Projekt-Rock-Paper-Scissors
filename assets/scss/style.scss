@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// General Main Styles 
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43,15,12); 
+}
+
+body {
+    background: rgb(100,50,54);
+}
+
+main {
+    text-align: center;
+    width: 414px; 
+    border: 10px solid rgb(43,15,12); 
+    border-radius: 3px; 
+    margin: 20vh auto; 
+    h1 {
+        background: white; 
+        padding: 20px; 
+    }
+    form {
+        background: rgb(242,218,182);
+        padding: 3vh 5vw;  
+        section {
+            border: 2px solid rgb(43,15,12); 
+            border-radius: 3px;
+            margin: 20px 0; 
+            padding: 10px 0; 
+        }
+    }
+    
+}
+
+// Round Selection
+main {
+    form {
+        section:nth-of-type(1) {
+            background: rgba(187,197,146,0.5); 
+            h2 {
+                font-size: 1.3rem;
+            }
+            article {
+                padding: 10px;
+                label {
+                    margin-right: 10px;
+                } 
+            }
+        }
+    }  
+}
+
+// Results Section 
+main {
+    form {
+        section:nth-of-type(2) {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(223,144,132,0.5); 
+            font-weight: bold;
+            font-size: 1.3rem;
+            .circleResults {
+                padding: 15px 25px; 
+                background: rgb(206,121,57);
+                border: 1px solid rgb(206,121,57);
+                border-radius: 5px; 
+            }
+            .user {
+                margin-left: 5vw; 
+            }
+            .comp {
+                margin-right: 5vw; 
+            }
+        }
+    }
+}
+
