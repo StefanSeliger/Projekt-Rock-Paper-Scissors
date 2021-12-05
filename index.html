@@ -10,38 +10,38 @@
 </head>
 
 <body>
-    <h1>Rock Paper Scrissors</h1>
-    <form action="">
+    <h1>Rock Paper Scissors</h1>
+    <form action="" onsubmit="return false">
         <section>
             <h2>how many rounds?</h2>
-            <article>
+            <article id="roundSelection">
                 <div>
-                    <input type="radio" name="rounds" id="round5">
-                    <label for="">5</label>
-                    <input type="radio" name="rounds" id="round15">
-                    <label for="">15</label>
+                    <input type="radio" name="rounds" id="round5" value=5>
+                    <label for="round5">5</label>
+                    <input type="radio" name="rounds" id="round10" value=10>
+                    <label for="round10">10</label>
                 </div>
                 <div>
-                    <input type="radio" name="rounds" id="round10">
-                    <label for="">10</label>
-                    <input type="radio" name="rounds" id="round20">
-                    <label for="">20</label>
+                    <input type="radio" name="rounds" id="round15" value=15>
+                    <label for="round15">15</label>
+                    <input type="radio" name="rounds" id="round20" value=20>
+                    <label for="round20">20</label>
                 </div>
             </article>
             <p id="roundsPlayed"></p>
         </section>
         <section>
             <p>user</p>
-            <p id="results">0 : 0</p>
+            <p><span id="userWins">0</span> : <span id="compWins">0</span></p>
             <p>comp</p>
         </section>
         <section>
             <p id="gameOutput">Let´s play!</p>
-            <a href="#" id="rock">✊🏻</a>
-            <a href="#" id="paper">✋🏻</a>
-            <a href="#" id="scissors">🖖🏻</a>
+            <a href="#" id="rock" onclick="userChoice(rock)">✊🏻</a>
+            <a href="#" id="paper" onclick="userChoice(paper)">✋🏻</a>
+            <a href="#" id="scissors" onclick="userChoice(scissors)">🖖🏻</a>
             <p>MAKE YOUR MOVE.</p>
-            <a href="#" onclick="restart()">restart</a>
+            <a href="">restart</a>
         </section>
     </form>
 
