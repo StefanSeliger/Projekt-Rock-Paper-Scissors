@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scrissors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scrissors</h1>
+    <form action="">
+        <section>
+            <h2>how many rounds?</h2>
+            <article>
+                <div>
+                    <input type="radio" name="rounds" id="round5">
+                    <label for="">5</label>
+                    <input type="radio" name="rounds" id="round15">
+                    <label for="">15</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="round10">
+                    <label for="">10</label>
+                    <input type="radio" name="rounds" id="round20">
+                    <label for="">20</label>
+                </div>
+            </article>
+            <p id="roundsPlayed"></p>
+        </section>
+        <section>
+            <p>user</p>
+            <p>0 : 0</p>
+            <p>comp</p>
+        </section>
+        <section>
+            <p id="gameOutput">Let´s play!</p>
+            <div id="rock">✊🏻</div>
+            <div id="paper">✋🏻</div>
+            <div id="scissors">🖖🏻</div>
+            <p>MAKE YOUR MOVE.</p>
+            <a href="#" onclick="restart()">restart</a>
+        </section>
+    </form>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
