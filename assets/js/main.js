@@ -6,10 +6,18 @@ let round10 = document.getElementById("round10")
 let round15 = document.getElementById("round15")
 let round20 = document.getElementById("round20")
 let roundSelection = document.getElementById("roundSelection")
-
 let roundsPlayed = document.getElementById("roundsPlayed")
+
+// Results
 let result = document.getElementById("result")
 let gameOutput = document.getElementById("gameOutput")
+
+// Counting Wins & Rounds
+let userWins = document.getElementById("userWins")
+let userPoints = 0
+let compWins = document.getElementById("compWins")
+let compPoints = 0
+let countRound = 0
 
 // User Choices
 let rockId = document.getElementById("rockId")
@@ -22,21 +30,14 @@ let scissors = "scissors"
 // Computer Choices
 let compArray = ["rock", "paper", "scissors"]
 
-// Counting Wins & Rounds
-let userWins = document.getElementById("userWins")
-let userPoints = 0
-let compWins = document.getElementById("compWins")
-let compPoints = 0
-let countRound = 0
-
+// Game Function
 let userChoice = (x) => {
-    let formRounds = form.rounds.value
-    let compArrayRandom = compArray[Math.floor(Math.random() * 3)]
+    let formRounds = form.rounds.value // Which Radio Input (Rounds)
+    let compArrayRandom = compArray[Math.floor(Math.random() * 3)] // Computers Choice
     roundSelection.style.display = "none"
     countRound += 1
     roundsPlayed.innerHTML = `${countRound} / ${formRounds}` 
-    
-
+    // Who wins
     if (compArrayRandom == x) { // tie
         gameOutput.innerHTML = "It's a tie!"
     } else if (compArrayRandom != x) { // computer wins
@@ -50,7 +51,7 @@ let userChoice = (x) => {
             userWins.innerHTML = userPoints
         }
     } 
-
+    // How many rounds and results
     if (countRound == formRounds) {
         rockId.disabled = true
         paperId.disabled = true
